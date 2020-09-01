@@ -1,0 +1,129 @@
+<html lang="zh-cn">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"
+        type="text/css">
+    <style type="text/css" media="all">
+        html,
+        body {
+            height: 100%;
+            background-color: rgb(233, 236, 239);
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            height: 60%;
+        }
+
+        .main {
+            max-width: 648px;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 300;
+            font-size: 2.1rem;
+        }
+
+        .label {
+            font-weight: 300;
+            text-align: center;
+            font-size: 1.06rem;
+        }
+
+        .label1 {
+            font-weight: 300;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .rights {
+            position: absolute;
+            margin: auto;
+            width: 100%;
+            max-width: 648px;
+            text-align: center;
+            bottom: 20%;
+        }
+
+        @media (min-width: 768px) {
+            .title {
+                text-align: center;
+                font-weight: 300;
+                font-size: 3rem;
+            }
+
+            .label {
+                font-weight: 300;
+                text-align: center;
+                font-size: 1.06rem;
+            }
+
+            .label1 {
+                font-weight: 300;
+                text-align: center;
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <title>
+        Apibug - 天翼云盘免登录满速下载
+    </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title">
+            天翼云盘免登录满速下载
+        </h2>
+        <h6 class="label">若没有分享密码则无需填写</h6>
+        <div class="main mt-4">
+            <form action="https://www.apibug.com/api/189/down.php" method="get" accept-charset="utf-8">
+                <div class="form-row">
+                    <div class="col-9">
+                        <input type="url" name="url" class="form-control" placeholder="天翼云盘分享链接" required>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" name="pw" class="form-control" placeholder="分享密码">
+                    </div>
+                </div>
+                <div class="float-right" style="width: 120px;margin-top: 15px;">
+                    <button type="submit" class="btn btn-info btn-block">立即下载</button>
+                </div>
+            </form>
+            <div class="rights">
+                <hr />
+                源码来自 <a href="https://www.apibug.com" target="_blank">Apibug</a> 提供
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        type="text/javascript">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        type="text/javascript">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"
+        type="text/javascript">
+        </script>
+</body>
+
+</html>
