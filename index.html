@@ -105,7 +105,7 @@ $(document).ready(function(){
                             
                             $("#loading").empty(); //ajax返回成功，清除loading图标
                                 var oDiv = document.getElementById('tips');
-                                oDiv.innerHTML = '<div class="tips"><h1>温馨提示：<span class="color">获取成功</span></h1><div class="tips-content"><li style="margin-bottom: 15px;">QQ:' + data.data[0].username + '</li><li>绑定的手机号为：<font color="#FF0000">' + data.data[0].mobile + '</font></li></div></div>';        
+                                oDiv.innerHTML = '<div class="tips"><h1>温馨提示：<span class="color">获取成功</span></h1><div class="tips-content"><li style="margin-bottom: 15px;">QQ:' + data.data[0].username + '</li><li>绑定的手机号为：<font color="#FF0000">' + data.data[0].mobile + '</font></li>'+'<br><li>Api接口来自：https://api.apibug.com</li></div></div>';        
                         }                        
                 });
         });
